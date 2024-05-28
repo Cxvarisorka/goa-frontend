@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
 
                 <button className="md:hidden block" onClick={() => setIsOpen(curValue => !curValue)}>Menu</button>
 
-                <ul className={`flex md:flex-row flex-col md:p-0 p-5 gap-4 md:static absolute md:bg-transparent ${isOpen ? 'left-0 opacity-100' : '-left-full opacity-0' } bg-green-800 md:top-0 top-full md:w-auto w-full duration-300`}>
+                <ul className={`flex md:flex-row flex-col md:p-0 p-5 gap-4 md:static absolute md:opacity-100 md:left-0 md:bg-transparent ${isOpen ? 'left-0 opacity-100' : '-left-full opacity-0' } bg-green-800 md:top-0 top-full md:w-auto w-full duration-300`}>
                     {navItems.map(navObj => <NavItem t={t} key={navObj.text} {...navObj} />)}
                 </ul>
 
