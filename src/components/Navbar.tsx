@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
 
     return (
         <header className="bg-green-600 text-white shadow-md">
-            <nav className="2xl:container relative mx-auto py-4 px-3 text-sm lg:text-base flex justify-between items-center">
+            <nav className="2xl:container relative mx-auto py-4 px-3 text-sm lg:text-base flex justify-between items-center z-50">
                 <h1 className="font-bold text-xl lg:text-4xl">
                     <Link to={'/'}>Goa</Link>
                 </h1>
