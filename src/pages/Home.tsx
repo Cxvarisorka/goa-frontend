@@ -1,6 +1,6 @@
 import React from "react";
 import SliderComp from "../components/Slider";
-import slider1Img from '../../public/assets/ailecture1.png'
+// import slider1Img from '../../public/assets/ailecture1.png'
 
 
 const HomePage: React.FC = () => {
