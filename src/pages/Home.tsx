@@ -1,10 +1,11 @@
 import React from "react";
 import SliderComp from "../components/Slider";
+import slider1Img from '../../public/assets/ailecture1.png'
 
 
 const HomePage: React.FC = () => {
     const sliderContent = [
-        <div key="1" className="p-4 bg-blue-200 h-full">Slide 1 Content</div>,
+        <div key="1" className="p-4 bg-indigo-200 h-full">Slide 1 Content</div>,
         <div key="2" className="p-4 bg-red-200 h-full">Slide 2 Content</div>,
         <div key="3" className="p-4 bg-green-200 h-full">Slide 3 Content</div>,
     ];
