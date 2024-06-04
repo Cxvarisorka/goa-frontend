@@ -14,8 +14,8 @@ import { MdMenu } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
 
 // Flags
-import geoFlag from "../../public/assets/flags/georgia.png";
-import engFlag from "../../public/assets/flags/united-kingdom.png";
+import geoFlag from "../assets/flags/georgia.png";
+import engFlag from "../assets/flags/united-kingdom.png";
 
 
 
