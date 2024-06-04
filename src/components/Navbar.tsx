@@ -13,6 +13,10 @@ import { FaYoutube } from "react-icons/fa";
 import { MdMenu } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
 
+// Flags
+import geoFlag from "../../public/assets/flags/georgia.png";
+import engFlag from "../../public/assets/flags/united-kingdom.png";
+
 
 
 interface NavItemProps {
@@ -115,15 +119,9 @@ const Navbar: React.FC = () => {
                         {navItems.map(navObj => <NavItem t={t} key={navObj.text} {...navObj} />)}
                     </ul>
 
-                    <div className="flex gap-2">
-                        <button 
-                            onClick={() => changeLanguage('en')}>
-                            English
-                        </button>
-                        <button 
-                            onClick={() => changeLanguage('ka')}>
-                            Georgian
-                        </button>
+                    <div className="flex gap-1">
+                        <img className="sm:w-11 w-9 cursor-pointer" src={engFlag} onClick={() => changeLanguage('en')} alt="United-Kingdom Flag" />
+                        <img className="sm:w-11 w-9 cursor-pointer" src={geoFlag} onClick={() => changeLanguage('ka')} alt="Georgian Flag" />
                     </div>
                 </div>
                 
