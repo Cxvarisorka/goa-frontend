@@ -1,5 +1,5 @@
 import React from "react";
-import SliderComp from "../components/Slider";
+// import SliderComp from "../components/Slider";
 import Hero from "../components/Hero";
 // import slider1Img from '../../public/assets/ailecture1.png'
 
