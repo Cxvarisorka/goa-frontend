@@ -120,8 +120,8 @@ const Navbar: React.FC = () => {
                     </ul>
 
                     <div className="flex gap-1">
-                        <img className="sm:w-11 w-9 cursor-pointer" src={engFlag} onClick={() => changeLanguage('en')} alt="United-Kingdom Flag" />
-                        <img className="sm:w-11 w-9 cursor-pointer" src={geoFlag} onClick={() => changeLanguage('ka')} alt="Georgian Flag" />
+                        <img className="sm:w-11 w-7 cursor-pointer" src={engFlag} onClick={() => changeLanguage('en')} alt="United-Kingdom Flag" />
+                        <img className="sm:w-11 w-7 cursor-pointer" src={geoFlag} onClick={() => changeLanguage('ka')} alt="Georgian Flag" />
                     </div>
                 </div>
                 
