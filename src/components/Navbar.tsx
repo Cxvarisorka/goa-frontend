@@ -10,6 +10,10 @@ import { IoCall } from "react-icons/io5";
 import { MdFacebook } from "react-icons/md";
 import { FaYoutube } from "react-icons/fa";
 
+import { MdMenu } from "react-icons/md";
+import { IoMdClose } from "react-icons/io";
+
+
 
 interface NavItemProps {
   text: string;
@@ -74,7 +78,7 @@ const Navbar: React.FC = () => {
 
     return (
         <header className="shadow-md text-white">
-            <div className="bg-[#050906]">
+            <div className="bg-primary-black">
                 <div className="2xl:container relative mx-auto px-3 py-3 text-sm lg:text-base flex md:justify-between justify-center items-center">
                     <div className="flex gap-5 sm:text-left text-center sm:items-start items-center">
                         {
@@ -99,13 +103,13 @@ const Navbar: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <nav className="bg-[#3c8143]">
-                <div className="2xl:container relative mx-auto py-4 px-3 text-sm lg:text-base flex justify-between items-center z-50">
-                    <h1 className="font-bold text-xl lg:text-4xl">
+            <nav className="bg-primary-green">
+                <div className="2xl:container relative mx-auto py-4 px-3 2xl:text-xl xl:text-xl lg:text-lg sm:text-base flex justify-between items-center z-50">
+                    <h1 className="font-bold text-3xl lg:text-5xl">
                         <Link to={'/'}>Goa</Link>
                     </h1>
 
-                    <button className="md:hidden block" onClick={() => setIsOpen(curValue => !curValue)}>{t('menu')}</button>
+                    <button className="md:hidden block text-3xl" onClick={() => setIsOpen(curValue => !curValue)}>{!isOpen ? <MdMenu /> : <IoMdClose />}</button>
 
                     <ul className={`flex md:flex-row flex-col md:p-0 p-5 gap-4 md:static absolute md:opacity-100 md:left-0 md:bg-transparent ${isOpen ? 'left-0 opacity-100' : '-left-full opacity-0' } bg-[#1e4022] md:top-0 top-full md:w-auto w-full duration-300`}>
                         {navItems.map(navObj => <NavItem t={t} key={navObj.text} {...navObj} />)}
