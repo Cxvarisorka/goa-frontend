@@ -8,7 +8,7 @@ const HomePage: React.FC = () => {
     return (
         <main>
             <section className="bg-primary-black">
-                <Hero title="Home" text="Goal Oriented Academy, Learn Programing"/>
+                <Hero title="home" text="hero-home-description"/>
             </section>
             
         </main>
